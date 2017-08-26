@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/purple"
+    android:weightSum="1"
+    android:orientation="vertical"
+    tools:context="appnimal2kang.dobe.Walking">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="@color/lightPurple"
+        android:layout_height="0dp"
+        android:layout_weight="0.03">
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.2">
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/title_walking" />
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/fg_forWalk"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.77"
+        android:padding="15dp">
+    </FrameLayout>
+
+</LinearLayout>

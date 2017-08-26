@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@color/lightPurple"
+    android:layout_width="300dp"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="15dp"
+        android:layout_gravity="center_horizontal"></RelativeLayout>
+
+    <RelativeLayout
+        android:orientation="vertical"
+        android:background="@color/purple"
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:layout_gravity="center_horizontal"></RelativeLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal">
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/circle_purple"
+            android:layout_gravity="center_horizontal" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/purple"
+            android:text="상세정보"
+            android:layout_gravity="center_horizontal" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="30dp">
+
+        <TextView
+            android:id="@+id/tvCareInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/purple"
+            android:text="상세정보"
+            android:layout_gravity="center_horizontal" />
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btInfoOk"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="확      인"
+            android:textColor="@color/white"
+            android:background="@color/purple"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+
+</LinearLayout>

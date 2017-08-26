@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_refresh"
+    android:weightSum="1"
+    tools:context=".ActivityLocation"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="@color/lightPurple"
+        android:layout_height="0dp"
+        android:layout_weight="0.03">
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="0dp"
+        android:id="@+id/careTitle"
+        android:layout_gravity="center_horizontal"
+        android:clickable="true"
+        android:background="@drawable/title_care"
+        android:layout_weight="0.2"
+        android:layout_marginBottom="20dp" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.77"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="30dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="◆ 맞춤형 케어 선택"
+            android:id="@+id/textView7"/>
+
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:dividerHeight="10dp"
+            android:divider="@color/purple"
+            android:id="@+id/listView_care"
+            android:clickable="false"
+            android:layout_marginTop="10dp"
+            android:background="@color/purple" />
+    </LinearLayout>
+
+</LinearLayout>

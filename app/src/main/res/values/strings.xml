@@ -1,0 +1,82 @@
+<resources>
+    <string name="app_name">웨어러블리펫</string>
+
+    <string-array name="petType">
+        <item>골든 리트리버</item>
+        <item>그레이트 데인</item>
+        <item>달마시안</item>
+        <item>도그 드 보르도</item>
+        <item>라사 압소</item>
+        <item>래브라도 리트리버</item>
+        <item>로트와일러</item>
+        <item>미니어처 닥스훈트</item>
+        <item>미니어처 슈나우저</item>
+        <item>미니어처 푸들</item>
+        <item>바셋 하운드</item>
+        <item>보더 콜리 </item>
+        <item>보더 테리어</item>
+        <item>복서</item>
+        <item>비숑 프리제</item>
+        <item>셔틀랜드 쉽독</item>
+        <item>스태퍼드셔 불테리어</item>
+        <item>시베리안 허스키</item>
+        <item>시츄</item>
+        <item>와이머라너</item>
+        <item>웨스트 하이랜드 테리어</item>
+        <item>잉글리쉬 불독</item>
+        <item>요크셔 테리어</item>
+        <item>잉글리시 스프링거 스파니엘</item>
+        <item>저먼 셰퍼드</item>
+        <item>카바리에 킹 찰스 스파니엘</item>
+        <item>케언 테리어</item>
+        <item>코카스파니엘</item>
+        <item>토이 푸들</item>
+        <item>티베탄 테리어</item>
+        <item>퍼그</item>
+        <item>휘핏</item>
+        <item>그외 소형견</item>
+        <item>그외 중형견</item>
+        <item>그외 대형견</item>
+    </string-array>
+
+    <string-array name="petWalking">
+        <item>100</item>
+        <item>60</item>
+        <item>120</item>
+        <item>80</item>
+        <item>20</item>
+        <item>120</item>
+        <item>120</item>
+        <item>40</item>
+        <item>60</item>
+        <item>60</item>
+        <item>80</item>
+        <item>120</item>
+        <item>120</item>
+        <item>120</item>
+        <item>20</item>
+        <item>60</item>
+        <item>120</item>
+        <item>100</item>
+        <item>20</item>
+        <item>120</item>
+        <item>80</item>
+        <item>40</item>
+        <item>40</item>
+        <item>120</item>
+        <item>120</item>
+        <item>60</item>
+        <item>60</item>
+        <item>60</item>
+        <item>60</item>
+        <item>80</item>
+        <item>20</item>
+        <item>80</item>
+        <item>40</item>
+        <item>80</item>
+        <item>120</item>
+    </string-array>
+    <string name="title_activity_vaccination">VaccinationActivity</string>
+    <string name="action_settings">Settings</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+</resources>

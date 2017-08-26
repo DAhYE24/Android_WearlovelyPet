@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:weightSum="1"
+    android:background="@drawable/background_pb"
+    tools:context="appnimal2kang.dobe.MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.4">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/logo_main"
+            android:layout_margin="50dp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.6"
+        android:weightSum="1"
+        android:background="@color/lightPurple"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp">
+
+        <RelativeLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.72"
+            android:paddingTop="15dp">
+
+            <ImageButton
+                android:layout_width="30dp"
+                android:layout_height="25dp"
+                android:id="@+id/modifyImg"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/btn_modify"
+                android:layout_above="@+id/infoTxt"
+                android:layout_toEndOf="@+id/cameraImg"
+                android:layout_marginLeft="10dp" />
+
+            <ImageView
+                android:layout_width="160dp"
+                android:layout_height="160dp"
+                android:background="@color/white"
+                android:id="@+id/cameraImg"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/img_frame"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="25dp" />
+
+            <ImageButton
+                android:layout_width="30dp"
+                android:layout_height="25dp"
+                android:id="@+id/btnCamera"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/btn_camera"
+                android:layout_above="@+id/infoTxt"
+                android:layout_toStartOf="@+id/cameraImg"
+                android:layout_marginRight="10dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_marginTop="10dp"
+                android:text="이름 / 나이"
+                android:id="@+id/infoTxt"
+                android:layout_below="@+id/cameraImg"
+                android:layout_centerHorizontal="true" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="300dp"
+            android:layout_height="0dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:weightSum="1"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="0.28">
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="산책"
+                android:id="@+id/walkingBtn"
+                android:layout_weight="0.25"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="2.5dp"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:background="@drawable/btn_purple"
+                android:gravity="center" />
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="케어"
+                android:id="@+id/careBtn"
+                android:background="@drawable/btn_blue"
+                android:layout_marginLeft="2.5dp"
+                android:layout_marginRight="2.5dp"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:layout_weight="0.25"
+                android:gravity="center" />
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="위치"
+                android:id="@+id/mapBtn"
+                android:layout_marginLeft="2.5dp"
+                android:layout_marginRight="2.5dp"
+                android:background="@drawable/btn_purple"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:layout_weight="0.25"
+                android:gravity="center" />
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="관리"
+                android:id="@+id/managementBtn"
+                android:layout_marginLeft="2.5dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/btn_blue"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:layout_weight="0.25"
+                android:gravity="center" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@color/lightPurple"
+    android:layout_width="250dp"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="15dp"
+        android:layout_gravity="center_horizontal"></RelativeLayout>
+
+    <RelativeLayout
+        android:orientation="vertical"
+        android:background="@color/purple"
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:layout_gravity="center_horizontal"></RelativeLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal">
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/circle_purple"
+            android:layout_gravity="center_horizontal" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/purple"
+            android:text="거리 설정"
+            android:layout_gravity="center_horizontal" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:weightSum="1"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/purple"
+            android:textSize="13dp"
+            android:text="반경 거리"
+            android:layout_weight="0.5"
+            android:paddingLeft="30dp" />
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:textSize="13sp"
+            android:textColor="@color/purple"
+            android:id="@+id/editDistance"
+            android:layout_weight="0.3" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/purple"
+            android:textSize="13dp"
+            android:text="m"
+            android:layout_weight="0.2" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:weightSum="1"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:paddingLeft="30dp"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/purple"
+                android:textSize="13dp"
+                android:text="비상연락망" />
+
+            <ImageButton
+                android:id="@+id/btnNumberinfo"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:background="@drawable/info_icon"
+                android:layout_marginLeft="10dp" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5">
+
+            <EditText
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:ems="10"
+                android:textSize="13sp"
+                android:textColor="@color/purple"
+                android:id="@+id/editNumber"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="0.5" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/purple"
+        android:textSize="11dp"
+        android:text="비상연락망은 반려견이 반경거리에\n벗어나는 경우에 사용됩니다."
+        android:id="@+id/txtNumber"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="10dp" />
+
+    <LinearLayout
+        android:weightSum="1"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/purple"
+            android:textSize="13dp"
+            android:text="지점 설정"
+            android:layout_weight="0.5"
+            android:paddingLeft="30dp" />
+
+        <Button
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:textColor="@color/lightPurple"
+            android:textSize="13dp"
+            android:id="@+id/btnCurrent"
+            android:background="@drawable/btn_distance"
+            android:layout_marginLeft="50dp" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@color/purple"
+            android:textSize="13dp"
+            android:textColor="@color/white"
+            android:text="등록하기"
+            android:layout_gravity="center_horizontal"
+            android:id="@+id/rgDistanceBtn" />
+    </RelativeLayout>
+
+</LinearLayout>

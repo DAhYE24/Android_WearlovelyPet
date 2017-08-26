@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/purple"
+    tools:context=".ActivityLocation"
+    android:weightSum="1"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="@color/lightPurple"
+        android:layout_height="0dp"
+        android:layout_weight="0.03">
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.2">
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentEnd="false"
+            android:background="@drawable/title_locat" />
+    </RelativeLayout>
+
+    <fragment
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.6"
+        android:id="@+id/map_location"
+        android:name="com.google.android.gms.maps.MapFragment"
+        android:layout_margin="20dp" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.17"
+        android:gravity="center_horizontal">
+
+        <Button
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:text="거리 설정"
+            android:textColor="@color/purple"
+            android:id="@+id/btnDistance"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/btn_bone" />
+
+        <Button
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:text="위치 추적"
+            android:textColor="@color/purple"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/btnDogLocation"
+            android:background="@drawable/btn_bone" />
+    </LinearLayout>
+
+</LinearLayout>
