@@ -1,6 +1,8 @@
 [Android App] WearlovelyPet
 ========================
 WearlovelyPet is a dog managment application with wearable device. It provides walk(timer/map), location tracing, customized services.
+## Image
+![WearlovelyPet](https://i.imgur.com/630XtgD.gif)
 <br></br>
 ## Project Info
 #### 수행기관
